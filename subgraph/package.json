@@ -1,0 +1,16 @@
+{
+  "name": "celo-marketplace",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ clwest/celo-marketplace",
+    "create-local": "graph create --node http://localhost:8020/ clwest/celo-marketplace",
+    "remove-local": "graph remove --node http://localhost:8020/ clwest/celo-marketplace",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 clwest/celo-marketplace"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.32.0",
+    "@graphprotocol/graph-ts": "0.27.0"
+  }
+}
